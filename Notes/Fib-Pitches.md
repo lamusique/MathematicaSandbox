@@ -1,11 +1,11 @@
 
 a = Slove[Mod[Log[x/440]/Log[2]  12, 12], x]
-n[x_] := Mod[Log2[x/440]/Log[2] 12, 12]
+Note[x_] := Mod[Log2[x/440]/Log[2] 12, 12]
 
 Plot[Mod[Log2[x/440] + 0.75, 1], {x, 110, 880}]
 
-n[x_] := Mod[Log2[x/440] + 0.75, 1]
-n[x_] := Mod[Log2[x/440] + 0.75, 1] 12
+Note[x_] := Mod[Log2[x/440] + 0.75, 1]
+Note[x_] := Mod[Log2[x/440] + 0.75, 1] 12
 Note[x_] := Mod[Log2[x/440] + 0.75, 1] 12
 
 
@@ -20,34 +20,34 @@ Note[c4 GoldenRatio^Range[0, 3]]
 
 - - - - - - - - - - - - - - - - - - -
 
-DiscretePlot[n[440/2^(9/12) (x - 1)], {x, 1, 64},
+DiscretePlot[Note[440/2^(9/12) (x - 1)], {x, 1, 64},
  GridLines -> {Automatic, Range[1, 12]},
  Ticks -> {Automatic, Range[1, 12]}]
 
-Plot[n[440/2^(9/12) * GoldenRatio],{x,0,64}]
+Plot[Note[440/2^(9/12) * GoldenRatio],{x,0,64}]
 
-Show[DiscretePlot[n[440/2^(9/12) (x - 1)], {x, 1, 64},
+Show[DiscretePlot[Note[440/2^(9/12) (x - 1)], {x, 1, 64},
  GridLines -> {Automatic, Range[1, 12]},
- Ticks -> {Automatic, Range[1, 12]}], Plot[n[440/2^(9/12) * GoldenRatio],{x,0,64}]]
+ Ticks -> {Automatic, Range[1, 12]}], Plot[Note[440/2^(9/12) * GoldenRatio],{x,0,64}]]
 Show[%, ImageSize -> Large]
 
-Show[DiscretePlot[n[440/2^(9/12) (x - 1)], {x, 1, 256},
+Show[DiscretePlot[Note[440/2^(9/12) (x - 1)], {x, 1, 256},
  GridLines -> {Automatic, Range[1, 12]},
- Ticks -> {Automatic, Range[1, 12]}], Plot[n[440/2^(9/12) * GoldenRatio],{x,0,256}]]
+ Ticks -> {Automatic, Range[1, 12]}], Plot[Note[440/2^(9/12) * GoldenRatio],{x,0,256}]]
 
 Show[%, PlotRange -> {{0, 256}, {8, 9}}]
 
-Show[DiscretePlot[n[440/2^(9/12) (x - 1)], {x, 1, 256},
+Show[DiscretePlot[Note[440/2^(9/12) (x - 1)], {x, 1, 256},
  GridLines -> {Automatic, Range[1, 12]},
- Ticks -> {Automatic, Range[1, 12]}], Plot[n[440/2^(9/12) * GoldenRatio],{x,0,256}], PlotRange -> {{0, 256}, {8, 9}}]
+ Ticks -> {Automatic, Range[1, 12]}], Plot[Note[440/2^(9/12) * GoldenRatio],{x,0,256}], PlotRange -> {{0, 256}, {8, 9}}]
 
-Show[DiscretePlot[n[440/2^(9/12) (x - 1)], {x, 1, 256},
+Show[DiscretePlot[Note[440/2^(9/12) (x - 1)], {x, 1, 256},
  GridLines -> {Automatic, Range[1, 12]},
- Ticks -> {Automatic, Range[1, 12]},PlotMarkers -> {"��"}], Plot[n[440/2^(9/12) * GoldenRatio],{x,0,256}], PlotRange -> {{0, 256}, {8, 9}}]
+ Ticks -> {Automatic, Range[1, 12]},PlotMarkers -> {"��"}], Plot[Note[440/2^(9/12) * GoldenRatio],{x,0,256}], PlotRange -> {{0, 256}, {8, 9}}]
 
-Show[DiscretePlot[n[440/2^(9/12) GoldenRatio^(x - 1)], {x, 1, 64},
+Show[DiscretePlot[Note[440/2^(9/12) GoldenRatio^(x - 1)], {x, 1, 64},
  GridLines -> {Automatic, Range[1, 12]},
- Ticks -> {Automatic, Range[1, 12]}], Plot[n[440/2^(9/12) * GoldenRatio],{x,0,256}]]
+ Ticks -> {Automatic, Range[1, 12]}], Plot[Note[440/2^(9/12) * GoldenRatio],{x,0,256}]]
 
 
 gr[x_] := N[440/2^(9/12) GoldenRatio^(x - 1), 20]
